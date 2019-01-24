@@ -1,0 +1,51 @@
+{
+  "name": "tappnetwork/flysystem-box",
+  "description": "A Flysystem adapter for Box",
+  "keywords": [
+    "tappnetwork",
+    "flysystem-box",
+    "flysystem",
+    "box",
+    "v2",
+    "api"
+  ],
+  "homepage": "https://github.com/tappnetwork/flysystem-box",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Scott Grayson",
+      "email": "dscottgrayson@gmail.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^7.0",
+    "league/flysystem": "^1.0",
+    "tappnetwork/box-php": "@dev"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "TappNetwork\\FlysystemBox\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "TappNetwork\\FlysystemDropbox\\Test\\": "tests"
+    }
+  },
+  "scripts": {
+    "test": "vendor/bin/phpunit"
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "repositories": {
+    "local": {
+      "type": "path",
+      "url": "../box-php"
+    }
+  }
+}
