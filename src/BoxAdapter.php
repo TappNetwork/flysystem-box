@@ -134,7 +134,7 @@ class BoxAdapter extends AbstractAdapter
      */
     public function has($path)
     {
-        return $this->getMetadata($path);
+        return $this->getInfoFromPath($id);
     }
 
     /**
